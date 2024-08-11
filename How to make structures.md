@@ -55,7 +55,17 @@ Again we see that fscanf is expecting a parameter equal to %s except that this t
 
 ![image](https://github.com/user-attachments/assets/05cc1520-3cb3-4765-b382-9f6ca352bbee)
 
+Here we see it has taken its respective number of bytes and etc. 
 
+The last field (which is password) is the same as the last and is char[20]. 
+
+After this we can set the name of the struct and save. We also however need to make signature overrides if anything is not read properly, for example in this case IP was not typed correctly, so before the strcuture will be displayed properly we set the first param2 value (ip) too char *. And then the end result should be this:
+
+![image](https://github.com/user-attachments/assets/068f43dd-2a67-46df-a344-bf052fbf85c7)
+
+Much cleaner and easier to read. 
+
+We can use this structure in other places aswell in our decompilation!
 
 
 
